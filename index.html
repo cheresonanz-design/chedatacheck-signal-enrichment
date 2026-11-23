@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CheDataCheck Signals — DSGVO-konforme B2B Buying-Signals &amp; RevOps Scoring</title>
+  <meta name="description" content="Buying-Trigger (E-Rechnung, NIS2, Expansion), Domain-Deduplizierung &amp; Art. 6 DSGVO Prüfmatrix lokal im Browser." />
+  <link rel="canonical" href="https://cheresonanz-design.github.io/chedatacheck-signal-enrichment/" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CheDataCheck Signals", "applicationCategory": "BusinessApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "url": "https://cheresonanz-design.github.io/chedatacheck-signal-enrichment/"}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand-mark" href="index.html"><span>CheDataCheck Signals</span><span class="brand-badge">SIGNALS · REVOPS · DSGVO</span></a>
+      <nav class="nav-links" aria-label="Hauptnavigation"><a href="index.html" class="active">Signal Scorer</a>
+<a href="trigger-scoring/" class="">Trigger-Scoring</a>
+<a href="dedupe-normalization/" class="">Deduplizierung</a>
+<a href="crm-csv-export/" class="">CRM CSV</a>
+<a href="pro/" class="">Kit &amp; Rollout</a>
+<a href="legal/" class="">Impressum</a><a href="pro/" class="nav-cta">49 EUR Kit</a></nav>
+    </div>
+  </header>
+  
+  <section class="hero"><div class="container"><h1>B2B-Lead-Signal Scoring &amp; DSGVO-Enrichment (100 % lokal)</h1><p>Bewerten Sie Firmen-Signale aus Handelsregister, Stellenanzeigen und Tech-Stack lokal auf Kaufwahrscheinlichkeit — sauber dedupliziert für HubSpot/Pipedrive.</p></div></section>
+  <main class="container">
+    <div class="card">
+      <div class="btn-row" style="margin-top:0;margin-bottom:14px;">
+        <button type="button" class="btn" id="sample1Btn">Demo: DACH Mittelstand (3 Trigger + 1 Dublette)</button>
+        <button type="button" class="btn" id="sample2Btn">Demo: Saubere A-Accounts</button>
+        <button type="button" class="btn" id="sample3Btn">Demo: Speditionen &amp; Importeure</button>
+      </div>
+      <div class="form-grid">
+        <div><label for="profileInput">Kampagne / Zielsegment</label><input type="text" id="profileInput" /></div>
+        <div><label for="modeSelect">Signal-Vertikale</label><select id="modeSelect"><option value="compliance">NIS2 / E-Rechnung Trigger</option><option value="expansion">Standort- &amp; Hiring-Signale</option><option value="logistics">Import-/Zoll-Vertikale</option></select></div>
+        <div><label for="toneSelect">Outreach-Modus</label><select id="toneSelect"><option value="executive">Beratender B2B-Ansatz</option><option value="streng">Direkter ROI-Trigger</option></select></div>
+      </div>
+      <div class="btn-row"><button type="button" class="btn btn-primary" id="runCheckBtn">Lead-Signale bewerten</button></div>
+    </div>
+
+    <div id="resultCard" class="card hidden">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;">
+        <h2 id="resultHeadline" style="margin:0;">Ergebnis</h2>
+        <div class="btn-row" style="margin:0;">
+          <button type="button" class="btn btn-primary" id="copyActionBtn">Maßnahmentext kopieren</button>
+          <button type="button" class="btn" id="dlCsvBtn">CSV Export (.csv)</button>
+          <button type="button" class="btn" id="dlJsonBtn">JSON Audit (.json)</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-box"><div class="kpi-label">Pipeline-Qualität</div><div class="kpi-val" id="kpi1Val">-</div></div>
+        <div class="kpi-box"><div class="kpi-label">A-Tier Signale / Dubletten</div><div class="kpi-val" id="kpi2Val">-</div></div>
+        <div class="kpi-box"><div class="kpi-label">Pipeline-Potenzial</div><div class="kpi-val" id="kpi3Val">-</div></div>
+        <div class="kpi-box"><div class="kpi-label">Jahres-ACV-Potenzial</div><div class="kpi-val" id="kpi4Val">-</div></div>
+      </div>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Position &amp; Kategorie</th><th>Kennzahl</th><th>Effekt</th><th>Status</th><th>Prüfhinweis</th></tr></thead><tbody id="entriesBody"></tbody></table></div>
+      <h3>Priorisierte RevOps-Outreach-Sequenz</h3>
+      <textarea id="actionBox" readonly aria-label="Maßnahmentext"></textarea>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="offer-card highlight"><div><span class="badge badge-pass">CDC-SIG-01 · 49 EUR</span><h3>CheDataCheck B2B Signals &amp; RevOps Playbook Kit</h3><div class="offer-price">49 EUR</div><p class="muted">Inkl. B2B Signal-Scoring Excel, DSGVO Art. 6 B2B-Legitimation &amp; Offline Enrichment CLI (über unseren Live CheDataCheck Payhip Checkout).</p></div><div class="btn-row"><a href="https://payhip.com/b/uVaxJ" class="btn btn-primary">49 EUR Kit bestellen</a><a href="pro/" class="btn">Details</a></div></div>
+      <div class="offer-card"><div><span class="badge badge-warn">CDC-SIG-ROLLOUT · 2900 EUR</span><h3>CheDataCheck Signal-Pipeline &amp; RevOps Rollout</h3><div class="offer-price">2900 EUR</div><p class="muted">Aufbau Ihrer automatisierten DACH-Signal-Pipeline inkl. CRM-Webhook &amp; DSGVO-Dokumentation.</p></div><div class="btn-row"><a href="https://buy.stripe.com/4gMeV67kl8s6bXOezD2400c" class="btn btn-dark">2900 EUR Rollout buchen</a><a href="pro/" class="btn">Umfang</a></div></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p><strong>CheDataCheck Signals</strong> — Buying-Trigger (E-Rechnung, NIS2, Expansion), Domain-Deduplizierung &amp; Art. 6 DSGVO Prüfmatrix lokal im Browser.</p>
+      <p>Che Goncalves Menendez · CheDataCheck · by VeriTakt Collective (Gewerbe: ImportKlar) · Liegnitzstr. 53A, 28237 Bremen, Deutschland · Umsatzsteuerbefreit gemäß § 19 UStG (Kleinunternehmerregelung)</p>
+      <p><a href="legal/">Impressum &amp; DSGVO</a> · <a href="pro/">49 EUR Kit &amp; 2900 EUR Rollout</a> · <a href="https://cheresonanz-design.github.io/opskanon-directory/" target="_blank" rel="noopener">Gelistet auf OpsKanon</a></p>
+    </div>
+  </footer>
+  <script src="assets/b2b_signals_engine.js"></script><script src="assets/app.js"></script>
+</body>
+</html>

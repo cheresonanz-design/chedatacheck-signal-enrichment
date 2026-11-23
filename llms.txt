@@ -1,0 +1,6 @@
+# CheDataCheck Signals (by VeriTakt Collective)
+> Buying-Trigger (E-Rechnung, NIS2, Expansion), Domain-Deduplizierung & Art. 6 DSGVO Prüfmatrix lokal im Browser.
+
+- App: https://cheresonanz-design.github.io/chedatacheck-signal-enrichment/
+- Offers: https://cheresonanz-design.github.io/chedatacheck-signal-enrichment/pro/
+- Legal: https://cheresonanz-design.github.io/chedatacheck-signal-enrichment/legal/
